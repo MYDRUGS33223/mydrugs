@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/shop.css">
+  <title>Shop</title>
+</head>
+
+<body>
+  <div class="fixed">
+    <navbar id="nav">
+      <div class="navbar_container">
+        <div class="container-mobile">
+          <button id="btn-mobile"><span id="hamburger"></span></button>
+          <div class="logo-mobile">
+            <a href="index.html"><img src="./img/logos/WhiteLogo.png" class="logo-mobile" alt="Logo MyDrugs"></a>
+          </div>
+        </div>
+        <ul id="menu">
+          <li class="home-mobile">
+            <a href="index.html"id="close">home</a>
+          </li>
+          <li class="navbar_items">
+            <a href="shop.html" class="blue" id="close">shop</a>
+          </li>
+          <li class="navbar_items">
+            <a href="faq.html" class="green" id="close">faq</a>
+          </li>
+          <li id="logo-mobile">
+            <a href="index.html"><img src="./img/logos/WhiteLogo.png" id="#logo-mobile " class="logo" alt="Logo MyDrugs"></a>
+          </li>
+          <li class="navbar_items">
+            <a href="safety.html" class="purple" id="close">safety</a>
+          </li>
+          <li class="navbar_items">
+            <a href="contact.html" class="red" id="close">contact</a>
+          </li>
+        </ul>
+      </div>
+    </navbar>
+  </div>
+
+  <body onLoad="slide1()"></body>
+  <img id="slide1">
+  <script src="/js/main.js"></script>
+  <script type="text/javascript">
+    function slide1() {
+      const slide = document.getElementById("slide1")
+      let slideAtual = 1
+      slide.src = "./img/SliderImages/SmallerSliders/banner-shop.png"
+      setInterval(() => {
+        slideAtual == 0 ? (() => {
+          slideAtual = 1
+          slide.src = "./img/SliderImages/SmallerSliders/banner-shop.png"
+        })() : (() => {
+          slideAtual = 0
+          slide.src = "./img/SliderImages/SmallerSliders/promocao.png"
+        })()
+      }, 2000);
+    }
+  </script>
+
+  <div class="title">
+    <h1>Most Popular</h1>
+  </div>
+  <div class="container">
+    <div class="card_shop">
+      <img src="./img/products/StawBerry Stick.png" alt="">
+      <h3>CHOC STICK</h3>
+      <p>
+        COMING SOON</p>
+      <a href="#" class="btc">R10,00</a>
+      <a href="mailto:karmaformtv@gmail.com" class="eth">ORDER NOW</a>
+    </div>
+    <div class="card_shop">
+      <img src="./img/products/PineApple Stick.png" alt="">
+      <h3>PINEAPPLE STICK</h3>
+      <p>
+        COMING SOON</p>
+      <a href="#" class="btc">R10,00</a>
+      <a href="mailto:karmaformtv@gmail.com" class="eth">ORDER NOW</a>
+    </div>
+
+    <div class="card_shop">
+      <img src="./img/products/Apple Stick.png" alt="">
+      <h3>APPLE STICK</h3>
+      <p>
+        COMING SOON</p>
+      <a href="#" class="btc">R10,00</a>
+      <a href="mailto:karmaformtv@XYZ.com" class="eth">ORDER NOW</a>
+    </div>
+  </div>
+  </div>
+  <div class="container">
+    <div class="card_shop">
+      <img src="./img/products/Grape Stick.png" alt="">
+      <h3>GRAPE STICK</h3>
+      <p>
+        COMING SOON</p>
+      <a href="#" class="btc">R10,00</a>
+      <a href="mailto:karmaformtv@gmail.com" class="eth">ORDER NOW</a>
+    </div>
+    <div class="card_shop">
+      <img src="./img/products/Choc Stick 3.png" alt="">
+      <h3>STRAWBERRY STICK</h3>
+      <p>
+        COMING SOON</p>
+      <a href="#" class="btc">R10,00</a>
+      <a href="mailto:karmaformtv@gmail.com" class="eth">ORDER NOW</a>
+    </div>
+
+    <div class="card_shop">
+      <img src="./img/products/Banana Stick.png" alt="">
+      <h3>BANANA STICK</h3>
+      <p>
+        COMING SOON</p>
+      <a href="#" class="btc">R10,00</a>
+      <a href="mailto:karmaformtv@gmail.com" class="eth">ORDER NOW</a>
+    </div>
+  </div>
+  </div>
+  <div class="title">
+    <h1>New Additons</h1>
+  </div>
+  <section>
+    <div class="card_shop2">
+      <img src="./img/products/pink_pill.png" alt="">
+      <h1>SMILING DEVIL</h1>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p class="rgb">New Additon</p>
+      <p class="card_shop2_text">MEET THE NEWEST EDITION TO OUR LINEUP OF EXCLUSIVE PRODUCTS FROM OUR PARTNER GOODTIMES.
+        HAVE A RASBERRY FLAVORED
+        BLISS. AVALIBLE STARTING NEXT MONTH.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="card_shop2">
+      <img src="./img/products/yellow_pill.png" alt="">
+      <h1>CONFUSED</h1>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <p class="rgb">New Additon</p>
+      <p class="card_shop2_text">EVER WONDER WHY OUR PRODUCTS LOOKS LIKE CANDY BUT IS NEVER FLAVORED? TASTE THE CITRUS LEMON
+        FLAVORED JOINT IN YOUR MOUTHS. AVALIBLE FOR A
+        LIMITED TIME ONLY FOR OUR PREMIUM MEMBERS.</p>
+    </div>
+  </section>
+<script src="./js/mobile.js"></script>
+  </script>
+
+</body>
+
+</html>
